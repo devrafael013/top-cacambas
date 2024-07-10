@@ -1,67 +1,57 @@
-/* Gerais*/
-
+/* Gerais */
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .row {
-    margin: 0;
+  margin: 0;
 }
 
 .container {
-    padding: 70px 0;
-    max-width: 1280px;
-    margin: auto;
-}
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  padding: 70px 0;
 }
 
 p, li {
-    color: #444;
-    font-size: 14px;
+  color: #444;
+  font-size: 14px;
 }
 
 /* Barra de navegação */
-
 header, .navbar {
-    background-color: #fff;
-    width: 100%;
-    top: 0;
-    left: 0;
-    
-}
-
-button {
-    margin: 10px;
+  background-color: #fff;
 }
 
 #nav-container {
-    padding-top: 100px;
-    padding-bottom: 0;
-    
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 #logo {
-    width: 150px;
-    margin: 10px
+  width: 170px;
 }
 
 .navbar-brand {
-    color: #212529;
+  padding: 0;
+  color: #000;
+}
+
+.navbar-brand {
+  color: #000;
+}
+
+#navbar-links a {
+  color: #000;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 1rem .9rem;
-    color: #212529;
+  padding: 1rem .8rem;
+  color: #212529;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: #212529;
+.nav-item.active {
+  border-bottom: 3px solid #000;
 }
+
 
 /*Slider*/
 
@@ -70,7 +60,7 @@ button {
 }
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
-    height: 100vh;
+  height: 90vh;
 }
 
 #mainSlider .carousel-caption {
