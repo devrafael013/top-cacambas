@@ -58,25 +58,27 @@
 
         <div class="container" id="nav-container">
 
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <nav>
 
                 <a class="navbar-brand" href="index.html">
                     <img id="logo" src="img/logo-top-cacambas.png" alt="logo" > Aluguel de Caçambas de Entulho 
                 </a>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="colapse navbar-collapse justify-content-end" id="navbar-link">
-
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link" id="home-menu">  Home</span></a>
-                        <a href="#" class="nav-item nav-link" id="about-menu"> Sobre Nós </a>
-                        <a href="#" class="nav-item nav-link" id="services-menu"> Serviços </a>
-                    </div>
-                    <span href="#" class="nav-item nav-link" id="contact-menu"><button type="button" class="btn btn-outline-dark">Faça sua cotação</button></span>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
+
+                <ul class="nav-list">
+
+                    
+                    <li><a href="#" class="nav-item nav-link" id="home-menu">  Home</a></li>
+                    <li><a href="#" class="nav-item nav-link" id="about-menu"> Sobre Nós </a></li>
+                    <li><a href="#" class="nav-item nav-link" id="services-menu"> Serviços </a></li>
+                    
+                    <span href="#" class="nav-item nav-link" id="contact-menu"><button type="button" class="btn btn-outline-dark">Faça sua cotação</button></span>
+                </ul>
       
     
                 
@@ -94,19 +96,7 @@
             <!-- Slides da Empresa -->
             <div id="mainSlider" class="carousel slide" data-ride="carousel">
 
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
-
-                    <!-- Slide
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="3" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="4" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="5" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="6" aria-label="Slide 6"></button>
-                    -->
-
-                </div>
+                
 
                 <div class="carousel-inner">
                     
@@ -565,6 +555,6 @@
     </div>
     
     <script src="js/scripts.js" defer></script>
-
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
