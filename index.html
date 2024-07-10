@@ -8,7 +8,7 @@
     <title>Top Caçambas</title>
 
     <!--Verificação de propriedade do site HTML - GOOGLE-->
-    <meta name="google-site-verification" content="wqbHA3Sg8i7qosgiP41iGVv4F734mlPLhkQbpimiVkU" />
+    <!--<meta name="google-site-verification" content="wqbHA3Sg8i7qosgiP41iGVv4F734mlPLhkQbpimiVkU" />-->
 
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -58,31 +58,26 @@
 
         <div class="container" id="nav-container">
 
-            <nav>
+            
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
 
                 <a class="navbar-brand" href="index.html">
                     <img id="logo" src="img/logo-top-cacambas.png" alt="logo" > Aluguel de Caçambas de Entulho 
                 </a>
 
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <ul class="nav-list">
+                <div class="colapse navbar-collapse justify-content-end" id="navbar-link">
 
-                    
-                    <li><a href="#" class="nav-item nav-link" id="home-menu">  Home</a></li>
-                    <li><a href="#" class="nav-item nav-link" id="about-menu"> Sobre Nós </a></li>
-                    <li><a href="#" class="nav-item nav-link" id="services-menu"> Serviços </a></li>
-                    
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-item nav-link" id="home-menu">  Home</span></a>
+                        <a href="#" class="nav-item nav-link" id="about-menu"> Sobre Nós </a>
+                        <a href="#" class="nav-item nav-link" id="services-menu"> Serviços </a>
+                    </div>
                     <span href="#" class="nav-item nav-link" id="contact-menu"><button type="button" class="btn btn-outline-dark">Faça sua cotação</button></span>
-                </ul>
-      
-    
-                
-            </nav>
+                </div>
 
             
             
@@ -105,12 +100,14 @@
                         <img src="img/slider_principal.png" class="d-block w-100" alt="Seguro de Carro">
                         <div class="carousel-caption d-none d-md-block">
 
+                           <!--
                             <button class="animated-button">
                                
                                 <a class="text" href="/page.html"> Clique aqui e saiba mais</a>
                                 <span class="circle"></span>
                                 
                             </button>
+                            --> 
                             
                         </div>
                           
