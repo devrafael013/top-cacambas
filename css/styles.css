@@ -1,7 +1,7 @@
 /* Gerais*/
 
 body {
-  font-family: 'Roboto', sans-serif;
+  padding-top: 70px; /* Espaçamento igual à altura do navbar */
 }
 
 .row {
@@ -35,6 +35,18 @@ header, .navbar {
   
 }
 
+.navbar {
+  font-size: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out; /* Transição suave ao esconder e mostrar */
+  background-color: #fff; /* Ajuste a cor de fundo do navbar conforme necessário */
+}
+
+
 button {
   margin: 10px;
 }
@@ -48,6 +60,10 @@ button {
 #logo {
   width: 190px;
   margin: 10px
+}
+
+.navbar .brand {
+  font-size: 1.5rem;
 }
 
 .navbar-brand {
@@ -65,6 +81,10 @@ button {
 
 
 /*Slider*/
+
+#mainSlider {
+  margin-top: 70px; /* Garante que o slider comece logo após o navbar */
+}
 
 #mainSlider .carousel-inner, #mainSlider .carousel-item {
   height: 90vh;
@@ -135,7 +155,7 @@ button {
 }
 
 .about-title {
-  font-size: 25px;
+  font-size: 45px;
   color: #444;
   text-transform: uppercase;
   font-weight: bold;
@@ -145,7 +165,7 @@ button {
 .resumo-title {
   padding-top: 50px;
   text-align: center;
-  font-size: 19px;
+  font-size: 23px;
   margin-left: 5px;
   margin-right: 5px;
   font-family: 'Times New Roman', Times, serif;
@@ -175,7 +195,7 @@ button {
 .main-title {
   text-align: center;
   margin-bottom: 100px;
-  font-size: 2em;
+  font-size: 50px;
 }
 
 
@@ -183,10 +203,10 @@ button {
   content: '';
   position: absolute;
   inset: 0;
-  left: -5px;
+  left: -5spx;
   margin: auto;
   width: 200px;
-  height: 264px;
+  height: 300px;
   border-radius: 10px;
   background: linear-gradient(-45deg, #854a25 0%, #854a25 100% );
   z-index: -10;
@@ -211,7 +231,7 @@ button {
 }
 
 .card p:not(.heading) {
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .card p:last-child {
@@ -239,7 +259,7 @@ button {
 /*Card Avaliações */
 .card {
   width: 250px;
-  height: 270px;
+  height: 350px;
   background: #f5f5f5;
   overflow: visible;
   box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
@@ -328,7 +348,7 @@ button {
 }
 
 .contact-box p {
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .contact-title {
@@ -337,7 +357,7 @@ button {
 }
 
 #msg-box p {
-  font-size: 22px;   
+  font-size: 30px;   
 }
 
 #contact-form input[type= "text"], #contact-form input[type="email"], #contact-form textarea {
@@ -349,6 +369,25 @@ button {
   width: 120px;
   height: 50px;
 }
+
+/* Ajuste o tamanho dos campos de input e textarea */
+#contact-form input[type="text"], 
+#contact-form input[type="email"], 
+#contact-form textarea {
+  margin-bottom: 15px;
+  border-radius: 0;
+  width: 100%; /* Ajuste a largura conforme necessário */
+  height: 50px; /* Ajuste a altura conforme necessário */
+  padding: 10px; /* Adiciona espaço interno para maior conforto ao digitar */
+  box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura total */
+}
+
+/* Ajuste o tamanho do botão, se necessário */
+#contact-form .main-btn {
+  width: 120px;
+  height: 50px;
+}
+
 
 /*Copy*/
 
@@ -852,4 +891,83 @@ button {
   width: 220px;
   height: 220px;
   opacity: 1;
+}
+
+/* Exemplo para ajustar o container em tamanhos de tablet */
+@media (max-width: 1024px) {
+  .container {
+    padding: 40px 15px;
+  }
+  .navbar .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  .navbar .nav-links a {
+    text-decoration: none;
+    padding: 8px 16px;
+    color: #000;
+  }
+}
+
+/* Ajuste de fontes em telas pequenas */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 20px;
+  }
+}
+
+/* Imagens dentro dos cards */
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* Ajuste para telas menores como tablets */
+  .navbar .nav-links {
+    flex-direction: column; /* Links empilhados */
+    align-items: flex-end; /* Alinhamento à direita */
+    gap: 10px;
+  }
+  
+  .navbar {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Ajuste para telas de celular */
+  .navbar .brand {
+    font-size: 1.2rem;
+  }
+  
+  .navbar .nav-links a {
+    font-size: 14px; /* Links menores */
+    padding: 6px 12px;
+  }
+}
+
+/* Banner padrão */
+.banner {
+  width: 100%;
+  height: 50vh; /* Define a altura do banner em relação à altura da janela */
+  background-image: url('path-to-your-banner-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Ajustes responsivos para o banner */
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh; /* Ajusta a altura do banner para tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 30vh; /* Ajusta a altura do banner para celulares */
+  }
 }

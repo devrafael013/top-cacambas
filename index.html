@@ -551,5 +551,25 @@
     </div>
     
     <script src="js/scripts.js" defer></script>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Rolando para baixo - Esconde a navbar completamente
+            navbar.style.top = '-100%';  // Move a navbar completamente para fora da tela
+        } else {
+            // Rolando para cima - Mostra a navbar
+            navbar.style.top = '0';  // Reposiciona a navbar no topo da página
+        }
+
+        lastScrollTop = scrollTop;
+        });
+
+    </script>
+      
 </body>
 </html>

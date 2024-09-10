@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+
   // Filtro portfólio
 
   $('.filter-btn').on('click', function() {
@@ -68,6 +69,7 @@ $( document ).ready(function() {
   });
 
 });
+
 
 // parceiros
 
